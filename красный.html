@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ваша подсказка</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f4f4f2;
+      background: #101112;
+      font-synthesis: none;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100svh;
+      margin: 0;
+      background-color: #101112;
+      background-image: radial-gradient(rgb(255 255 255 / 5%) 0.6px, transparent 0.6px);
+      background-size: 5px 5px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: clamp(12px, 2vw, 24px);
+      min-height: 96px;
+      padding: 12px clamp(16px, 4vw, 48px);
+      background: rgb(16 17 18 / 94%);
+      border-bottom: 1px solid #292b2c;
+    }
+
+    .logo-link {
+      display: inline-flex;
+      flex: 0 0 auto;
+      align-items: center;
+      width: 72px;
+      height: 72px;
+      overflow: hidden;
+      background: #101112;
+    }
+
+    .logo-link svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .institute-name {
+      max-width: 520px;
+      margin: 0;
+      color: #f4f4f2;
+      font-family: "Arial Black", Arial, sans-serif;
+      font-size: clamp(18px, 3vw, 30px);
+      font-weight: 900;
+      line-height: 1.15;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: clamp(16px, 3vw, 28px) clamp(16px, 4vw, 48px);
+    }
+
+    .hint {
+      position: relative;
+      width: min(100%, 680px);
+      padding: clamp(20px, 4vw, 32px);
+      background: #444;
+      border: 1px solid #303334;
+      box-shadow: 0 12px 36px rgb(0 0 0 / 28%);
+    }
+
+    .hint::before {
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      left: -1px;
+      height: 5px;
+      background: #e53935;
+      content: "";
+    }
+
+    .hint p {
+      margin: 0;
+      color: #fff;
+      font-size: clamp(18px, 3vw, 28px);
+      line-height: 1.4;
+      overflow-wrap: anywhere;
+    }
+
+    .hint p + p {
+      margin-top: 16px;
+    }
+
+    .hint .hint-heading {
+      font-weight: 700;
+      margin: calc(-1 * clamp(20px, 4vw, 32px)) calc(-1 * clamp(20px, 4vw, 32px)) 16px;
+      padding: 14px clamp(20px, 4vw, 32px);
+      background: #444;
+      color: #fff;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 10px 20px;
+      background: #fff;
+      border: 1px solid #fff;
+      color: #111;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .contact-button:hover,
+    .contact-button:focus-visible {
+      background: #e6e6e6;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        min-height: 76px;
+      }
+
+      .logo-link {
+        width: 52px;
+        height: 52px;
+      }
+
+      .institute-name {
+        font-size: clamp(17px, 5vw, 22px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo-link" href="https://vk.ru/medianimuctr" aria-label="Перейти на сайт НИ РХТУ">
+      <svg viewBox="195 180 380 410" role="img" aria-labelledby="media-logo-title">
+        <title id="media-logo-title">Медиа НИ РХТУ</title>
+        <rect width="768" height="768" fill="#101112" />
+        <path d="M384 196 537 284v200l-153 88-153-88V284z" fill="none" stroke="#f4f4f2" stroke-linejoin="round" stroke-width="25" />
+        <circle cx="537" cy="246" r="17" fill="#c8ff32" />
+        <text x="384" y="360" fill="#f4f4f2" font-family="Arial, sans-serif" font-size="66" font-weight="900" text-anchor="middle">МЕДИА</text>
+        <text x="384" y="440" fill="#f4f4f2" font-family="Arial, sans-serif" font-size="62" font-weight="900" text-anchor="middle">НИРХТУ</text>
+      </svg>
+    </a>
+    <p class="institute-name">МЕДИА НИ РХТУ</p>
+  </header>
+  <main>
+    <section class="hint" aria-label="Подсказка">
+      <p class="hint-heading">🔴 КАРМИН | ХТ-26-1</p>
+      <p>🫣 Глазам сегодня доверять нельзя — придётся полагаться на собственные пальцы! Сможете определить, что скрывается в темноте, не увидев этого ни на секунду? Главное — не бояться неизвестности и доверять своему чутью! 👀</p>
+      <p>📍 <strong>Где искать?</strong></p>
+      <p>Сто кабинетов уже позади,<br>А нужный совсем впереди!<br>Найдите место, где полторы сотни почти достигнуты,<br>И приготовьтесь к загадкам, что на ощупь открыты! 🤚</p>
+      <p><strong>Кармин, доверьтесь своим ощущениям — и вперёд!</strong> 🔥</p>
+    </section>
+    <a class="contact-button" href="https://vk.ru/im?sel=-234069671" target="_blank" rel="noopener noreferrer">Сложная подсказка? Жми!</a>
+  </main>
+</body>
+</html>
